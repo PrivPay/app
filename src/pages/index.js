@@ -1,14 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/header"
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
-    <div style={{ color: `purple` }}>
-      <Link to="/contact/">Contact</Link>
-      <Header headerText="Hello Gatsby!" />
-      <p>What a world. Lotta smells.</p>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
+    <Layout>
+      <div style={{ color: `purple` }}>
+        <Header headerText="Welcome to PrivPay" />
+        <p>
+          PrivPay is building the world's first privacy focused personal finance
+          tool!!!
+        </p>
+      </div>
+    </Layout>
   )
 }

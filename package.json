@@ -15,8 +15,12 @@
   },
   "dependencies": {
     "gatsby": "^2.32.0",
+    "gatsby-plugin-typography": "^2.12.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
