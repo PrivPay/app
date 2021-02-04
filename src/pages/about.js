@@ -1,17 +1,25 @@
 import React from "react"
-import Header from "../components/header"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-export default function About() {
+export default function About({ data }) {
   return (
     <Layout>
-      <div style={{ color: `teal` }}>
-        <Header headerText="About PrivPay" />
-        <p>
-          PrivPay was founded in 2021 with the goal of helping people keep their
-          financial life private.
-        </p>
-      </div>
+      <h1>About {data.site.siteMetadata.title}</h1>
+      <p>
+        PrivPay was founded in 2021 with the goal of helping people keep their
+        financial life private.
+      </p>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
