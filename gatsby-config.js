@@ -1,13 +1,22 @@
+/* eslint-disable semi */
+/* eslint-disable quotes */
 module.exports = {
   siteMetadata: {
-    title: `PrivPay`,
+    title: "PrivPay",
   },
   plugins: [
-    `gatsby-plugin-emotion`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+    "gatsby-plugin-emotion",
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "src/utils/typography",
       },
     },
   ],
